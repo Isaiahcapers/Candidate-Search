@@ -3,6 +3,7 @@ import { searchGithub, searchGithubUser } from '../api/API';
 import Candidate from "../interfaces/Candidate.interface";
 import plus from '../assets/images/plus.png';
 import minus from '../assets/images/minus.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const CandidateSearch = () => {
   const [candidate, setCandidate] = useState<Candidate>({
     Image: '',
@@ -13,7 +14,6 @@ const CandidateSearch = () => {
     Bio: '',
 });
 
-const [searchGithub, setSearchGithub] = useState<string>('');
 
 useEffect(() => {
   const fetchCandidates = async () => {
@@ -40,26 +40,26 @@ useEffect(() => {
 
 
   return (
-  <div className="d-flex">
+  <div className="mDiv">
     <h1>CandidateSearch</h1>
     <div className="card" style={{width: "18rem"}}>
       <img className="card-img-top" src={`${candidate.Image}`} alt="Card image cap"/>
       <div className="card-body">
         <h3>Username</h3>
       </div>
-      <ul className='list-group list-group-flush'>
-        <li className='list-group-item'>
+      <ul className='list-group list-group-flush list-unstyled'>
+        <li className='list-group-item'>Location: 
         {candidate.Location}
         </li>
-        <li className='list-group-item'>
+        <li className='list-group-item'>Email: 
         {candidate.Email}
         </li>
-        <li className='list-group-item'>
+        <li className='list-group-item'>Company: 
         {candidate.Company}
         </li>
       </ul>
       <div className="card-body">
-      <p className="card-text">{candidate.Bio}</p>
+      <p className="card-text">Bio:{candidate.Bio}</p>
       </div>
     </div>
     <div style={{

@@ -68,7 +68,10 @@ button img {
   width: 3.5em;
   height: 3.5em;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
