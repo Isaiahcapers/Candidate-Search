@@ -81,11 +81,11 @@ To deploy this application to Render, follow the instructions on [Render's deplo
 
 ### Candidate Search Page
 
-![Candidate Search Page](src\assets\images\13-01-candidate_search_homepage.png)
+![Candidate Search Page](./src/assets/images/13-01-candidate_search_homepage.png)
 
 ### Potential Candidates Page
 
-![Potential Candidates Page](src\assets\images\13-02-candidate_search_potential_candidates.png)
+![Potential Candidates Page](./src/assets/images/13-02-candidate_search_potential_candidates.png)
 
 ## License
 
